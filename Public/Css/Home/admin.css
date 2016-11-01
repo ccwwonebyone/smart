@@ -1,0 +1,10 @@
+@charset"utf-8";
+body{
+	background-image: url(../../Images/admin.jpg);
+}
+#fixadmin{
+	margin-top: 60px;
+}
+#fixedbo{
+	margin-top: 5px;
+}

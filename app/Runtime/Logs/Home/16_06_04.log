@@ -1,0 +1,317 @@
+[ 2016-06-04T14:28:12+08:00 ] ::1 /smart/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022499s ]
+SQL: CREATE TABLE IF NOT EXISTS `smart`.`smart_main_2016-06-04` ( `main_id` INT NOT NULL AUTO_INCREMENT COMMENT '自增id' , `main_date` VARCHAR(100) NOT NULL COMMENT '录入日期' , `main_wo` VARCHAR(100) NOT NULL COMMENT '工单号' , `main_add` VARCHAR(100) NULL COMMENT '无用' , `main_tel` TEXT NOT NULL COMMENT '手机号' , `main_address` CHAR(255) NOT NULL COMMENT '地址' , `main_nu` VARCHAR(100) NULL COMMENT '无用' , `main_ytime` DATETIME NOT NULL COMMENT '预约日期' , `main_ctime` DATETIME NOT NULL COMMENT '结单日期' , `main_cf` SMALLINT NOT NULL COMMENT '重复值' , `main_mark` VARCHAR(100) NOT NULL COMMENT '备注' , `main_status` CHAR(255) NOT NULL COMMENT '状态' , `main_res` TEXT NOT NULL COMMENT '提单结果' , `main_staff` VARCHAR(100) NOT NULL COMMENT '处理人员' , `main_type` VARCHAR(100) NOT NULL COMMENT '单子状态' , `main_yres` CHAR(100) NOT NULL COMMENT '预处理' , `main_yyb` TEXT NOT NULL COMMENT '预约信息2' , `main_tda` TEXT NOT NULL COMMENT '提单信息1' , `main_tdb` TEXT NOT NULL COMMENT '提单信息2' ,  `main_dosta` SMALLINT NOT NULL COMMENT '工单处理状态' ,PRIMARY KEY (`main_id`)) ENGINE = MyISAM COMMENT = '日工作表'; [ RunTime:0.0678s ]
+SQL: SHOW TABLES [ RunTime:0.0216s ]
+SQL: DROP TABLE `smart_main_2016-05-03` [ RunTime:0.0431s ]
+NOTIC: [8] Undefined index: name F:\php\WWW\smart\app\Home\Controller\IndexController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.009739s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018560s ]
+
+[ 2016-06-04T14:28:21+08:00 ] ::1 /smart/Home/Login/login?action=login&name=admin&pwd=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `smart_user` [ RunTime:0.0548s ]
+SQL: SELECT `user_bck` FROM `smart_user` WHERE ( user_name='admin' AND user_pwd='d033e22ae348aeb5660fc2140aec35850c4da997' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.062221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.062375s ]
+
+[ 2016-06-04T14:28:21+08:00 ] ::1 /smart/Home/Login/choose
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+NOTIC: [8] Undefined index: chtype F:\php\WWW\smart\app\Home\Controller\LoginController.class.php 第 43 行.
+NOTIC: [8] Undefined index: chtype F:\php\WWW\smart\app\Home\Controller\LoginController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002026s ]
+
+[ 2016-06-04T14:28:24+08:00 ] ::1 /smart/Home/Login/config?info=config
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2016-06-04T14:28:24+08:00 ] ::1 /smart/Home/Login/chtype?chtype=%E9%A2%84%E7%BA%A6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002222s ]
+
+[ 2016-06-04T14:28:25+08:00 ] ::1 /smart/Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: CREATE TABLE IF NOT EXISTS `smart`.`smart_main_2016-06-04` ( `main_id` INT NOT NULL AUTO_INCREMENT COMMENT '自增id' , `main_date` VARCHAR(100) NOT NULL COMMENT '录入日期' , `main_wo` VARCHAR(100) NOT NULL COMMENT '工单号' , `main_add` VARCHAR(100) NULL COMMENT '无用' , `main_tel` TEXT NOT NULL COMMENT '手机号' , `main_address` CHAR(255) NOT NULL COMMENT '地址' , `main_nu` VARCHAR(100) NULL COMMENT '无用' , `main_ytime` DATETIME NOT NULL COMMENT '预约日期' , `main_ctime` DATETIME NOT NULL COMMENT '结单日期' , `main_cf` SMALLINT NOT NULL COMMENT '重复值' , `main_mark` VARCHAR(100) NOT NULL COMMENT '备注' , `main_status` CHAR(255) NOT NULL COMMENT '状态' , `main_res` TEXT NOT NULL COMMENT '提单结果' , `main_staff` VARCHAR(100) NOT NULL COMMENT '处理人员' , `main_type` VARCHAR(100) NOT NULL COMMENT '单子状态' , `main_yres` CHAR(100) NOT NULL COMMENT '预处理' , `main_yyb` TEXT NOT NULL COMMENT '预约信息2' , `main_tda` TEXT NOT NULL COMMENT '提单信息1' , `main_tdb` TEXT NOT NULL COMMENT '提单信息2' ,  `main_dosta` SMALLINT NOT NULL COMMENT '工单处理状态' ,PRIMARY KEY (`main_id`)) ENGINE = MyISAM COMMENT = '日工作表'; [ RunTime:0.0044s ]
+SQL: SHOW TABLES [ RunTime:0.0142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0055s ]
+SQL: SELECT `main_staff` FROM `smart_main_2016-06-04`  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: staff F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 28 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 30 行.
+SQL: SELECT * FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' AND main_dosta!=1 ) ORDER BY main_ctime ASC  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `smart_main_2016-06-04` WHERE ( main_dosta=1 ) ORDER BY main_ctime ASC  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2016-06-04T14:28:26+08:00 ] ::1 /smart/Home/Base/getblnum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001973s ]
+
+[ 2016-06-04T14:28:31+08:00 ] ::1 /smart/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: CREATE TABLE IF NOT EXISTS `smart`.`smart_main_2016-06-04` ( `main_id` INT NOT NULL AUTO_INCREMENT COMMENT '自增id' , `main_date` VARCHAR(100) NOT NULL COMMENT '录入日期' , `main_wo` VARCHAR(100) NOT NULL COMMENT '工单号' , `main_add` VARCHAR(100) NULL COMMENT '无用' , `main_tel` TEXT NOT NULL COMMENT '手机号' , `main_address` CHAR(255) NOT NULL COMMENT '地址' , `main_nu` VARCHAR(100) NULL COMMENT '无用' , `main_ytime` DATETIME NOT NULL COMMENT '预约日期' , `main_ctime` DATETIME NOT NULL COMMENT '结单日期' , `main_cf` SMALLINT NOT NULL COMMENT '重复值' , `main_mark` VARCHAR(100) NOT NULL COMMENT '备注' , `main_status` CHAR(255) NOT NULL COMMENT '状态' , `main_res` TEXT NOT NULL COMMENT '提单结果' , `main_staff` VARCHAR(100) NOT NULL COMMENT '处理人员' , `main_type` VARCHAR(100) NOT NULL COMMENT '单子状态' , `main_yres` CHAR(100) NOT NULL COMMENT '预处理' , `main_yyb` TEXT NOT NULL COMMENT '预约信息2' , `main_tda` TEXT NOT NULL COMMENT '提单信息1' , `main_tdb` TEXT NOT NULL COMMENT '提单信息2' ,  `main_dosta` SMALLINT NOT NULL COMMENT '工单处理状态' ,PRIMARY KEY (`main_id`)) ENGINE = MyISAM COMMENT = '日工作表'; [ RunTime:0.0005s ]
+SQL: SHOW TABLES [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0057s ]
+SQL: SELECT `main_staff` FROM `smart_main_2016-06-04`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: staff F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 28 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 30 行.
+SQL: SELECT * FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' AND main_dosta!=1 ) ORDER BY main_ctime ASC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `smart_main_2016-06-04` WHERE ( main_dosta=1 ) ORDER BY main_ctime ASC  [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001681s ]
+
+[ 2016-06-04T14:28:32+08:00 ] ::1 /smart/Home/Base/getblnum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001257s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0301s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2016-06-04T14:28:34+08:00 ] ::1 /smart/Home/Staff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: need F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `smart_staff` [ RunTime:0.0698s ]
+SQL: SELECT * FROM `smart_staff`  [ RunTime:0.0407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.201735s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.201799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2016-06-04T14:28:35+08:00 ] ::1 /smart/Home/Base/getblnum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2016-06-04T14:29:06+08:00 ] ::1 /smart/Home/Base/allsearch?action=allsearch&buildname=%E5%B0%A7%E6%9E%97%E4%BB%99%E5%B1%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `smart_c` [ RunTime:0.1405s ]
+SQL: SELECT `gims_C` FROM `smart_c` WHERE ( LOCATE(`gims_A`,'尧林仙居')>0 OR gims_A LIKE '%尧林仙居%' )  [ RunTime:1.1211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002574s ]
+
+[ 2016-06-04T14:29:24+08:00 ] ::1 /smart/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+SQL: CREATE TABLE IF NOT EXISTS `smart`.`smart_main_2016-06-04` ( `main_id` INT NOT NULL AUTO_INCREMENT COMMENT '自增id' , `main_date` VARCHAR(100) NOT NULL COMMENT '录入日期' , `main_wo` VARCHAR(100) NOT NULL COMMENT '工单号' , `main_add` VARCHAR(100) NULL COMMENT '无用' , `main_tel` TEXT NOT NULL COMMENT '手机号' , `main_address` CHAR(255) NOT NULL COMMENT '地址' , `main_nu` VARCHAR(100) NULL COMMENT '无用' , `main_ytime` DATETIME NOT NULL COMMENT '预约日期' , `main_ctime` DATETIME NOT NULL COMMENT '结单日期' , `main_cf` SMALLINT NOT NULL COMMENT '重复值' , `main_mark` VARCHAR(100) NOT NULL COMMENT '备注' , `main_status` CHAR(255) NOT NULL COMMENT '状态' , `main_res` TEXT NOT NULL COMMENT '提单结果' , `main_staff` VARCHAR(100) NOT NULL COMMENT '处理人员' , `main_type` VARCHAR(100) NOT NULL COMMENT '单子状态' , `main_yres` CHAR(100) NOT NULL COMMENT '预处理' , `main_yyb` TEXT NOT NULL COMMENT '预约信息2' , `main_tda` TEXT NOT NULL COMMENT '提单信息1' , `main_tdb` TEXT NOT NULL COMMENT '提单信息2' ,  `main_dosta` SMALLINT NOT NULL COMMENT '工单处理状态' ,PRIMARY KEY (`main_id`)) ENGINE = MyISAM COMMENT = '日工作表'; [ RunTime:0.0005s ]
+SQL: SHOW TABLES [ RunTime:0.0067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0375s ]
+SQL: SELECT `main_staff` FROM `smart_main_2016-06-04`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: staff F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 28 行.
+NOTIC: [2] array_unique() expects parameter 1 to be array, null given F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 28 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 30 行.
+SQL: SELECT * FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' AND main_dosta!=1 ) ORDER BY main_ctime ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `smart_main_2016-06-04` WHERE ( main_dosta=1 ) ORDER BY main_ctime ASC  [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2016-06-04T14:29:25+08:00 ] ::1 /smart/Home/Base/getblnum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001608s ]
+
+[ 2016-06-04T14:29:28+08:00 ] ::1 /smart/Home/Base/autoadd?address=%E5%B0%A7%E6%9E%97%E4%BB%99%E5%B1%85&staff=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `smart_a` [ RunTime:0.0929s ]
+SQL: SELECT `gims_D`,`gims_F`,`gims_H` FROM `smart_a` WHERE ( LOCATE(`gims_B`,'尧林仙居')>0 OR gims_B LIKE '%尧林仙居%' )  [ RunTime:0.3379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002620s ]
+
+[ 2016-06-04T14:29:33+08:00 ] ::1 /smart/Home/Staff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] Undefined index: need F:\php\WWW\smart\app\Home\Widget\TdtableWidget.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `smart_staff` [ RunTime:0.0379s ]
+SQL: SELECT * FROM `smart_staff`  [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.144236s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.144421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003385s ]
+
+[ 2016-06-04T14:29:35+08:00 ] ::1 /smart/Home/Base/getblnum
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+SQL: SHOW COLUMNS FROM `smart_main_2016-06-04` [ RunTime:0.0178s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `smart_main_2016-06-04` WHERE ( main_type='已派发' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002472s ]
+
+[ 2016-06-04T14:29:38+08:00 ] ::1 /smart/Home/Staff/search?action=search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `smart_staff` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `smart_staff` WHERE ( 1 AND staff_name='魏俊' )  [ RunTime:0.0009s ]
+

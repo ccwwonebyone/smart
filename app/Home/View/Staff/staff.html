@@ -1,0 +1,55 @@
+<extend name="Base:base" />
+<block name="title">智-信息管理</block>
+<block name='link'><link rel="stylesheet" href="__PUBLIC__/Css/Home/staff.css"></block>
+<block name='src'>
+<script>
+  var staffChangeinfo = "{:U('Staff/changeinfo')}";
+  var staffSearch = "{:U('Staff/search')}";
+  var staffDel = "{:U('Staff/del')}";
+  var staffInsert= "{:U('Staff/insert')}";
+</script>
+<script src="__PUBLIC__/Js/Home/staff.js" type="text/javascript" charset="utf-8" async defer></script>
+</block>
+<block name='main'>
+<div class="container">
+<div id="fixedgd">
+  <table class="table table-bordered table-hover table-condensed " id="toptable" cellspacing="0" width="100%">
+  <thead>
+        <tr>
+            <form class="bs-example bs-example-form" id='sign' role="form">
+			<div class="input-group input-group-sm">
+			<th> <input type="text" class="form-control" name='sstaffname' id='sstaffname' placeholder="人员名字"></th>
+            <th><input type="text" class="form-control" name='stel' id='stel' placeholder="手机号"></th>
+            <th><input type="text" class="form-control" name='sbck' id='smark' placeholder="备注"></th>
+            <th class="work"><span class="btn  btn-primary" id='staffsearch'>查询</span></th> 
+            </div>  
+            </form>       
+        </tr>
+  </thead>
+  </table>
+  	<label class="col-xs-1 btn  btn-danger">详细信息</label>
+    <div class="col-xs-11">
+        <input type="text" class="form-control" id="tdinfo" placeholder="表格信息 不要随意更改，后果很严重">
+    </div>
+  </div>
+  </div>
+  <div class="container">
+<table class="table table-bordered table-hover table-condensed " cellspacing="0" width="100%" id="fixedbo">	
+  <thead>
+	<tr id="linfo">	
+		<div class="input-group input-group-sm">
+		<th> <input type="text" class="form-control" name='staffname' id='staffname' placeholder="人员名字"></th>
+		<th><input type="text" class="form-control" name='tel' id='tel' placeholder="手机号"></th>
+		<th><input type="text" class="form-control" name='mark' id='mark' placeholder="备注"></th>
+			<th id='action'>
+				<button type="button" class="btn  btn-primary" id='stasub'>录入</button>
+			</th>
+		</div>
+	</tr>
+  </thead>
+  <tbody id="getall">
+		{:W('Tdtable/Showstaffinfo')}	
+  </tbody>
+ </table>
+ </div>
+</block>

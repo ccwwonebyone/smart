@@ -1,0 +1,63 @@
+<extend name="Base:lbase" />
+<block name="title">智-登录</block>
+<block name='link'><link rel="stylesheet" href="__PUBLIC__/Css/Home/choose.css"></block>
+<block name='src'>
+<script>
+   var loginConfig = "{:U('Login/config')}";
+   var loginChtype = "{:U('Login/chtype')}";
+   var bl = "{:U('Bl/index')}";
+   var home = "{:U('Index/index')}";
+</script>
+<script src="__PUBLIC__/Js/Home/choose.js" type="text/javascript" charset="utf-8" async defer></script>
+</block>
+<block name='main'>
+<div id="choose">
+	<div class="btn-group">
+		<span class="btn btn-lg btn-danger" data-toggle="modal" data-target="#myModal" id='xyy'>预约</span>
+		<span class="btn btn-lg btn-primary" id="blw">提单</span>
+	</div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content" id="bgc">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title text-center" >
+               预约设置【直接提交会默认执行】<span class="label label-warning">设置很重要</span>
+            </h4>
+         </div>
+         <div class="modal-body text-center">
+        	<form class="form-inline"  role="form" id='sif'>
+        		<div class="form-group">
+      				<input type="text" class="form-control" id="name1" placeholder="原人员">=>
+      				<input type="text" class="form-control" id="bname1" placeholder="替换人员">
+   				</div>
+   				<div class="form-group">
+      				<input type="text" class="form-control" id="name2" placeholder="原人员">=>
+      				<input type="text" class="form-control" id="bname2" placeholder="替换人员">
+   				</div>
+   				<div class="form-group">
+      				<input type="text" class="form-control" id="name3" placeholder="原人员">=>
+      				<input type="text" class="form-control" id="bname3" placeholder="替换人员">
+   				</div>
+			</form>
+			<div class="btn-group " data-toggle="buttons">
+	            <label class="btn btn-primary" id='one'>刘胡平</label>
+	   			<label class="btn btn-primary" id='two'>吴密情</label>
+			</div>
+			<span class="btn btn-danger" id="add">增加</span>
+         </div>
+         <div class="modal-footer">
+            <span  class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </span>
+            <span class="btn btn-primary" id='sub'>提交</span>
+         </div>
+      </div>
+</div>
+</div>
+</block>

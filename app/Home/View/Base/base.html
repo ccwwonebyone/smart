@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><block name="title">智</block></title>
+    <!-- <link rel="stylesheet" href="__PUBLIC__/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/jquery-ui/jquery-ui.theme.min.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/Css/Home/base.css">
+    <script src="__PUBLIC__/jquery-ui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="__PUBLIC__/jquery-ui/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap3-typeahead.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- 放到最后否则不认识自动补全插件 -->
+    <script src="__PUBLIC__/Js/Home/base.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="__PUBLIC__/jquery-ui/zclip/jquery.zclip.js" type="text/javascript" charset="utf-8"></script> -->
+    <script>
+        var baseLogout = "{:U('Base/logout')}";
+        var baseGetblnum = "{:U('Base/getblnum')}";
+        var baseAllsearch = "{:U('Base/allsearch')}";
+        var baseYconfig = "{:U('Base/yconfig')}";
+        var baseUpload = "{:U('Base/upload')}";
+        var baseShowsheet = "{:U('Base/showsheet')}";
+        var baseChangesheet = "{:U('Base/changesheet')}";
+        var baseUploadfile = "{:U('Base/uploadfile')}";
+        var baseInsertdata = "{:U('Base/insertdata')}";
+        var baseSubsug = "{:U('Base/subsug')}";
+        var baseChangeinfo = "{:U('Base/changeinfo')}";
+        var baseAutoadd= "{:U('Base/autoadd')}";
+        var baseSearch = "{:U('Base/search')}";
+        var baseDel = "{:U('Base/del')}";               
+        var loginConfig = "{:U('Login/config')}";
+        var loginIndex = "{:U('Login/index')}";
+        var modalToconfig = "{:U('Modal/toconfig')}";
+        var modalYconfig = "{:U('Modal/yconfig')}";
+        var modalImportexcel = "{:U('Modal/importexcel')}";
+        var modalImportwh = "{:U('Modal/importwh')}";
+        var modalSuggest = "{:U('Modal/suggest')}";
+    </script>
+    <block name="link"></block>
+    <block name="src"></block>
+</head>
+<body>
+<include file="base/header" />
+<block name="main"></block>
+<include file="base/footer" />
+</body>
+</html>

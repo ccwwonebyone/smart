@@ -1,0 +1,58 @@
+@charset"utf-8";
+#fixedgd{
+	position: fixed;
+	top: 60px;
+	margin-right: 108px;
+	z-index: 666;
+	background-image: url(../../Images/fixedgd.jpg);
+}
+#fixedbo{
+	margin-top: 165px;
+}
+table{
+	table-layout:fixed;	
+}
+tr,td,th{	
+	text-align: center !important;
+	vertical-align:middle !important;
+}
+td{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+	cursor: pointer;
+}
+.time{
+	width:120px;
+}
+.tel{
+	width: 100px;
+}
+.work{
+	width: 120px;
+}
+.address{
+	width: 350px;
+}
+.wo{
+	width: 150px;
+}
+#tdinfo{
+	margin-bottom: 10px !important;
+}
+#toptable{
+	margin-bottom: 5px;
+}
+.select{
+	background-color: #ccffcc;
+}
+.form-group{
+	margin-bottom: 5px !important;
+}
+textarea{
+	resize:none;
+}
+.modal-content{
+	background-image: url(/smart/Public/Images/modal.jpg);
+}

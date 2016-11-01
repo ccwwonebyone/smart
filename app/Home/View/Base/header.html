@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div class="container">
+         <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#">智WORK</a>
+          <form class="navbar-form navbar-left" role="search">
+         <div class="form-group">
+            <input type="text" class="form-control" id="buildname" placeholder="小区名">
+            <button type="button" class="btn btn-danger" id="allsearch">全区搜索</button>
+            <span class="label label-info">今日总单数：</span>
+            <span class="label label-success" id="allbl">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="label label-info">剩余总单数：</span>
+            <span class="label label-danger" id="resuidbl">0</span>
+         </div>        
+      </form>  
+      </div>
+      <div class="collapse navbar-collapse" id="example-navbar-collapse">
+         <ul class="nav navbar-nav  navbar-right" id="header">
+           <li><a href="{:U('Index/index')}">主页</a></li>
+           <li><a href="{:U('Staff/index')}">信息管理</a></li>
+            <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            修改配置 <span class="caret"></span>
+             </a>
+            <ul class="dropdown-menu">
+                <li><a href="#" id="toconfig">今日配置</a></li>
+               <li><a href="#" id="yconfig">表格配置</a></li>
+             </ul>
+             </li>
+              <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            EXCEL <span class="caret"></span>
+             </a>
+            <ul class="dropdown-menu">
+                <li><a href="{:U('excel/exportexcel')}">导出今日数据</a></li>
+                <li><a href="{:U('excel/exportexcel5')}">导出5组数据</a></li>
+                <li><a href="{:U('excel/exportexcel8')}">导出8组数据</a></li>
+               <li><a href="#" id="importwh">导入维护EXCEL</a></li>
+               <li><a href="#" id='importexcel'>导入新增数据</a></li>
+             </ul>
+             </li>
+             {:W('Tdtable/admin')}
+            <li><a href="#" id="logout">退出</a></li>
+         </ul>
+      </div>
+      </div>
+</nav>
+<!-- 动态加载模态框 -->
+<div id="modal"></div>

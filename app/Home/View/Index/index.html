@@ -1,0 +1,101 @@
+<extend name="Base:base" />
+<block name="title">智-预约首页</block>
+<block name='link'><link rel="stylesheet" href="__PUBLIC__/Css/Home/index.css"></block>
+<block name='src'>
+<script>
+var indexGetmore = "{:U('Index/getmore')}";
+var indexSuredata = "{:U('Index/suredata')}";
+var indexInsert = "{:U('Index/insert')}";
+</script>
+<script src="__PUBLIC__/Js/Home/index.js" type="text/javascript" charset="utf-8" async defer></script>
+</block>
+<block name='main'>
+<div class="container" id='mainimg'>
+<div id="fixedgd">
+  <table class="table table-bordered table-hover table-condensed " id="toptable" cellspacing="0" width="100%">
+  <thead>
+        <tr>
+            <form class="bs-example bs-example-form" id='sign' role="form">
+			<div class="input-group input-group-sm">
+			<th> <input type="text" class="form-control" name='swo' id='swo' placeholder="查询工单号"></th>
+            <th class="tel"><input type="text" class="form-control" name='stel' id='stel' placeholder="手机号"></th>
+            <th><input type="text" class="form-control" name='saddress' id='saddress' placeholder="地址"></th>
+            <th class="time">
+            <input type="text" class="form-control" name='stime' id='stime' placeholder="派单时间"></th>
+            <th class="sta">
+            <input type="text" class="form-control" name='smark' id='smark' placeholder="铁通置换">
+            </th>
+            <th class="sta">
+            <input type="text" class="form-control" name='ssta' id='ssta'>
+            </th>
+            <th><input type="text" class="form-control" name='sres' id='sres' placeholder="人员"></th>
+            <th class="sta">
+            <div class="btn-group">
+	   			<button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+	   			<span id="sstaff">所有</span><span class="caret"></span>
+	   			</button>
+	   			<ul class="dropdown-menu" role="menu">
+	   				<li><a href="#" class="wostaff">所有</a></li>
+				    {:W('Tdtable/Showstaff')}
+  				 </ul>
+			</div>
+			</th>
+			</div>
+            <th class="sta">
+				<div class="btn-group">
+	   			<button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown">
+	      			<span id="stype">已派发</span><span class="caret"></span>
+	   				</button>
+	   				<ul class="dropdown-menu" role="menu">
+				      <li><a href="#" class="wotype">所有</a></li>
+				      <li><a href="#" class='wotype'>已派发</a></li>
+				      <li><a href="#" class='wotype'>已提单</a></li>
+				      <li><a href="#" class='wotype'>先提单</a></li>
+  				 	</ul>
+				</div>
+            </th>
+            <th class="work"><span class="btn  btn-primary" id='search'  data-provide="typeahead">查询</span></th>   
+            </form>       
+        </tr>
+  </thead>
+  </table>
+  	<label class="col-xs-1 btn  btn-danger">详细信息</label>
+    <div class="col-xs-11">
+        <input type="text" class="form-control" autocomplete="off" data-provide="typeahead" id="tdinfo" placeholder="表格信息 不要随意更改，后果很严重">
+    </div>
+  </div>
+  </div>
+  <div class="container">
+<table class="table table-bordered table-hover table-condensed " cellspacing="0" width="100%" id="fixedbo">	
+  <thead>
+	<tr id="linfo">	
+		<div class="input-group input-group-sm">
+		<th class='wo'> <input type="text" class="form-control" name='wo' id='wo' placeholder="工单号"></th>
+		<th class="tel"><input type="text" class="form-control" name='tel' id='tel' placeholder="手机号"></th>
+	<th class='address'><input type="text" class="form-control" name='address' id='address' placeholder="地址"></th>
+		<th class="time"><input type="text" class="form-control" name='ytime' id='ytime' placeholder="派单时间"></th>
+		<th class="mark"> <input type="text" class="form-control" name='mark' id='mark' placeholder="铁通置换"></th>
+	<th class="sta"> <input type="text" class="form-control" name='sta' id='sta'  placeholder="1为已提单2先提单"></th>
+		<th> 
+			<div class="ui-widget">
+				<input type="text" class="form-control" name='res' id='res' placeholder="师傅回单">
+			</div>
+			</th>
+			<th><input type="text" class="form-control" name='staff' id='staff' placeholder="人员">
+			</th>
+			<th> <input type="text" class="form-control" name='ylr' id='ylr' disabled  value="已派发"></th>
+			<th id='action' class="work">
+				<div class="btn-group btn-group-xs ">
+				  	<button type="button" class="btn  btn-primary sel" id='repair'>维修</button>
+				 	<button type="button" class="btn  btn-primary" id='sub'>录入</button>
+				</div>
+			</th>
+		</div>
+	</tr>
+  </thead>
+  <tbody id="getall">
+	{:W('Tdtable/Showtab')}	
+  </tbody>
+ </table>
+ </div>
+</block>

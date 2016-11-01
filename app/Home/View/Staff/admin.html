@@ -1,0 +1,49 @@
+<extend name="Base:base" />
+<block name="title">智-用户管理</block>
+<block name='link'><link rel="stylesheet" href="__PUBLIC__/Css/Home/admin.css"></block>
+<block name='src'>
+<script>
+  var staffChangeuserinfo = "{:U('Staff/changeuserinfo')}";
+  var staffUserdel = "{:U('Staff/userdel')}";
+  var staffAdduser = "{:U('Staff/adduser')}";
+</script>
+
+<script src="__PUBLIC__/Js/Home/admin.js" type="text/javascript" charset="utf-8" async defer></script>
+</block>
+<block name='main'>
+<div class="container">
+<div id="fixadmin">
+  	<label class="col-xs-1 btn  btn-danger">详细信息</label>
+    <div class="col-xs-11">
+        <input type="text" class="form-control" id="tdinfo" placeholder="表格信息 不要随意更改，后果很严重">
+    </div>
+  </div>
+  </div>
+  <div class="container">
+<table class="table table-bordered table-hover table-condensed " cellspacing="0" width="100%" id="fixedbo">	
+  <thead>
+	<tr id="linfo">	
+		<div class="input-group input-group-sm">
+		<th> <input type="text" class="form-control" name='username' id='username' placeholder="用户名"></th>
+		<th><input type="password" class="form-control" name='pwd' id='pwd' placeholder="密码"></th>
+		<th><input type="text" class="form-control" name='userbck' id='userbck' placeholder="备注"></th>
+			<th id='action'>
+				<button type="button" class="btn btn-primary" id='usersub'>注册</button>
+			</th>
+		</div>
+	</tr>
+  <tr class="btn-primary"> 
+    <div>
+    <th>序号</th>
+    <th>用户名</th>
+    <th>备注</th>
+    <th>操作</th>
+    </div>
+  </tr>
+  </thead>
+  <tbody id="getall">
+		{:W('Tdtable/Showuser')}	
+  </tbody>
+ </table>
+ </div>
+</block>

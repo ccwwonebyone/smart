@@ -1,0 +1,21 @@
+[ 2016-06-03T17:04:23+08:00 ] ::1 /smart/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004719s ]
+SQL: CREATE TABLE IF NOT EXISTS `smart`.`smart_main_2016-06-03` ( `main_id` INT NOT NULL AUTO_INCREMENT COMMENT '自增id' , `main_date` VARCHAR(100) NOT NULL COMMENT '录入日期' , `main_wo` VARCHAR(100) NOT NULL COMMENT '工单号' , `main_add` VARCHAR(100) NULL COMMENT '无用' , `main_tel` TEXT NOT NULL COMMENT '手机号' , `main_address` CHAR(255) NOT NULL COMMENT '地址' , `main_nu` VARCHAR(100) NULL COMMENT '无用' , `main_ytime` DATETIME NOT NULL COMMENT '预约日期' , `main_ctime` DATETIME NOT NULL COMMENT '结单日期' , `main_cf` SMALLINT NOT NULL COMMENT '重复值' , `main_mark` VARCHAR(100) NOT NULL COMMENT '备注' , `main_status` CHAR(255) NOT NULL COMMENT '状态' , `main_res` TEXT NOT NULL COMMENT '提单结果' , `main_staff` VARCHAR(100) NOT NULL COMMENT '处理人员' , `main_type` VARCHAR(100) NOT NULL COMMENT '单子状态' , `main_yres` CHAR(100) NOT NULL COMMENT '预处理' , `main_yyb` TEXT NOT NULL COMMENT '预约信息2' , `main_tda` TEXT NOT NULL COMMENT '提单信息1' , `main_tdb` TEXT NOT NULL COMMENT '提单信息2' ,  `main_dosta` SMALLINT NOT NULL COMMENT '工单处理状态' ,PRIMARY KEY (`main_id`)) ENGINE = MyISAM COMMENT = '日工作表'; [ RunTime:0.1171s ]
+SQL: SHOW TABLES [ RunTime:0.0048s ]
+SQL: DROP TABLE `smart_main_2016-05-02` [ RunTime:0.0269s ]
+NOTIC: [8] Undefined index: name F:\php\WWW\smart\app\Home\Controller\IndexController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009783s ]
+
