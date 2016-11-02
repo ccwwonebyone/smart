@@ -15,11 +15,11 @@ class IndexController extends Controller {
 			$_SESSION['chtype'] = cookie('chtype');
 		}
 		if ($_SESSION['name'] == '' || $_SESSION['bck'] == '') {
-			$this->display(T('Login/login'));
+			$this->redirect('Login/index');
 			exit();
 		} else {
 			if ($_SESSION['chtype'] == '提单') {
-				$this->display(T('Bl/index'));
+				$this->redirect('Bl/index');
 				exit();
 			}
 		}

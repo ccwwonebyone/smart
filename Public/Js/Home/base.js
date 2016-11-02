@@ -5,7 +5,7 @@ $(function(){
 			type:'GET',
 			url:baseLogout,
 			data:{
-				action:'logout',
+				action:'logout'
 			},
 			success:function(data){
 				if(data==1){
@@ -172,7 +172,7 @@ function ctconfig(){
 			type:'POST',
 			url:loginConfig+'?info=config',
 			data:{
-				conf:conf,
+				conf:conf
 			},
 			dataType:'json',
 			success:function(data){

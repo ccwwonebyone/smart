@@ -12,11 +12,11 @@ class BlController extends Controller {
 			$_SESSION['chtype'] = cookie('chtype');
 		}
 		if ($_SESSION['name'] == '' || $_SESSION['bck'] == '' || $_SESSION['chtype'] == '') {
-			$this->display(T('Login/login'));
+			$this->redirect('Login/index');
 			exit();
 		} else {
 			if ($_SESSION['chtype'] == '预约') {
-				$this->display(T('Index/index'));
+				$this->redirect('Index/index');
 				exit();
 			}
 		}

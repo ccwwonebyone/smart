@@ -54,5 +54,5 @@ textarea{
 	resize:none;
 }
 .modal-content{
-	background-image: url(/smart/Public/Images/modal.jpg);
+	background-image: url(../../Images/modal.jpg);
 }
